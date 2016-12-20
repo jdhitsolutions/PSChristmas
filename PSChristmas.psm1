@@ -19,7 +19,7 @@ Class myChristmas {
 [string]$ElfName
 [ListStatus]$List
 [string]$Day
-[int]$DaysRemaining
+[int32]$DaysRemaining
 [string]$CountDown
 
 #class methods
