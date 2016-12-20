@@ -78,4 +78,8 @@ $presents = $xmasData.presents | Get-Random -count $Count
 ```
 One benefit of using the json file as opposed to an enumeration is that the latter doesn't like spaces in the values. But using a format like json allows entries like "coloring book". In addition, if you wanted to add more entries, you only have to modify the json file and not any of the code.
 
+
+### Credits
+The functions to display the holiday graphics and play the tune are things I've collected since the earliest days of PowerShell. I wish I could remember who created all of them. I seem to recall "repurposing" at least from Lee Holmes, Hal Rottenberg and MoW.
+
 *Last Updated 20 December 2016*
