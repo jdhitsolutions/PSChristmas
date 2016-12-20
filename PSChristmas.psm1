@@ -12,35 +12,13 @@ Enum ListStatus {
     Nice
 }
 
-Enum Present {
-    Socks
-    Barbie
-    Elmo
-    XBox
-    GIJoe
-    Underwear
-    HotWheels
-    EZBakeOven
-    Walkman
-    PS4
-    Pajamas
-    Stratego
-    GinzuKnives
-    ChiaPet
-    Tie
-    Mittens
-    Bicycle
-    Pony
-    Battleship
-    CabbagePatchDoll
-}
-
 Class myChristmas {
 
 #class properties
 [string]$Greeting
 [string]$ElfName
 [ListStatus]$List
+[string]$Day
 [int]$DaysRemaining
 [string]$CountDown
 
@@ -51,6 +29,7 @@ Class myChristmas {
  $Christmas = [datetime]::new( (Get-Date).Year,12,25)
 
  Write-Verbose "[CLASS] Christmas this year is $Christmas"
+ $this.Day = $Christmas.DayOfWeek
  $span = $Christmas - (Get-Date)
  $this.DaysRemaining = $span.totalDays
  #strip off milliseconds
@@ -60,7 +39,6 @@ Class myChristmas {
  Write-Verbose "[CLASS] Getting new greeting"
  $this.Greeting = New-Greeting
 }
-
 
 [void]Play() {
     Write-Verbose "[CLASS] Invoking Play()"

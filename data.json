@@ -50,7 +50,13 @@
                        "Hermey",
                        "Rupert",
                        "Lady",
-                       "Izzy"
+                       "Izzy",
+                       "Timmy",
+                       "Tammy",
+                       "Enoch",
+                       "Suzie",
+                       "Esmerelda",
+                       "Doc"
                    ],
     "Modifiers":  [
                       "Ginger",
@@ -79,7 +85,8 @@
                       "Puffy",
                       "Fluffy",
                       "Saucy",
-                      "Crinkle"
+                      "Crinkle",
+                      "Sticky"
                   ],
     "LastNames":  [
                       "pants",
@@ -103,6 +110,37 @@
                       "boots",
                       "slippers",
                       "knicker",
-                      "knocker"
-                  ]
+                      "knocker",
+                      "muffin",
+                      "puff",
+                      "heels",
+                      "knees"
+                  ],
+    "Presents":  [
+                     "Socks",
+                     "Barbie",
+                     "Elmo",
+                     "XBox",
+                     "GI Joe",
+                     "Underwear",
+                     "Hot Wheels",
+                     "EZ Bake Oven",
+                     "Walkman",
+                     "PS4",
+                     "Pajamas",
+                     "Stratego",
+                     "Ginzu Knives",
+                     "Chia Pet",
+                     "Tie",
+                     "Mittens",
+                     "Bicycle",
+                     "Pony",
+                     "Battleship",
+                     "Cabbage Patch Doll",
+                     "Tie",
+                     "Slippers",
+                     "Sled",
+                     "Bourbon",
+                     "Coloring book"
+                 ]
 }
