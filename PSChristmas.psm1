@@ -5,7 +5,7 @@ A demo PowerShell class based module
 #>
 
 #dot source helper functions
-. .\PSChristmasFunctions.ps1
+.  $PSScriptRoot\PSChristmasFunctions.ps1
 
 Enum ListStatus {
     Naughty
