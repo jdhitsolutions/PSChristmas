@@ -82,4 +82,7 @@ One benefit of using the json file as opposed to an enumeration is that the latt
 ### Credits
 The functions to display the holiday graphics and play the tune are things I've collected since the earliest days of PowerShell. I wish I could remember who created all of them. I seem to recall "repurposing" at least from Lee Holmes, Hal Rottenberg and MoW.
 
-*Last Updated 20 December 2016*
+The <a href="http://bit.ly/2gTxigI" target="_blank" title="Read 'A Classy PowerShell Christmas'">class</a> and <a href="http://bit.ly/2gYjXUc" target="_blank" title="Read 'A Classy Christmas PowerShell Module'">module</a> are also described on my [blog](http://blog.jdhitsolutions.com)  
+
+
+*Last Updated 21 December 2016*
