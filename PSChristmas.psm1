@@ -18,7 +18,7 @@ Class myChristmas {
 [string]$Greeting
 [string]$ElfName
 [ListStatus]$List
-[string]$Day
+[string]$ChristmasDay
 [int32]$DaysRemaining
 [string]$CountDown
 
@@ -29,7 +29,7 @@ Class myChristmas {
  $Christmas = [datetime]::new( (Get-Date).Year,12,25)
 
  Write-Verbose "[CLASS] Christmas this year is $Christmas"
- $this.Day = $Christmas.DayOfWeek
+ $this.ChristmasDay = $Christmas.DayOfWeek
  $span = $Christmas - (Get-Date)
  $this.DaysRemaining = $span.totalDays
  #strip off milliseconds
@@ -37,7 +37,7 @@ Class myChristmas {
  $this.CountDown = $timestring.Substring(0,$timestring.LastIndexOf("."))
 
  Write-Verbose "[CLASS] Getting new greeting"
- $this.Greeting = New-Greeting
+ $this.Greeting = New-myChristmasGreeting
 }
 
 [void]Play() {
@@ -70,3 +70,20 @@ myChristmas() {
 
 }
 
+Function New-MyChristmas {
+    [cmdletbinding()]
+    [OutputType([myChristmas])]
+    Param()
+
+    Write-Verbose "[BEGIN  ] Starting: $($MyInvocation.Mycommand)"
+
+    New-Object -TypeName myChristmas
+
+    Write-Verbose "[END    ] Ending: $($MyInvocation.Mycommand)"
+}
+
+Set-Alias -Name elfme -Value New-Elfname
+Set-Alias -Name jingle -value Invoke-jingle
+
+Export-ModuleMember -Function 'New-ElfName', 'New-myChristmasGreeting', 'Get-myChristmasPresent',
+'New-myChristmas','Show-myChristmasMessage','Invoke-Jingle' -Alias 'jingle','elfme'
