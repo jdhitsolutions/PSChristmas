@@ -85,7 +85,9 @@ The data can then be used in a function like this:
 ```
 $presents = $xmasData.presents | Get-Random -count $Count
 ```
-One benefit of using the json file as opposed to an enumeration is that the latter doesn't like spaces in the values. But using a format like json allows entries like "coloring book". In addition, if you wanted to add more entries, you only have to modify the json file and not any of the code.
+One benefit of using the json file as opposed to an enumeration is that the latter doesn't like spaces in the values. But using a format like json allows entries like "coloring book". In addition, if you wanted to add more entries, you only have to modify the json file and not any of the code. 
+
+If you look at the module folder you'll also see a script called BuildJsonFile.ps1 which will create the json file for you based on settings within the file.
 
 
 ### Credits
@@ -94,4 +96,4 @@ The functions to display the holiday graphics and play the tune are things I've 
 The <a href="http://bit.ly/2gTxigI" target="_blank" title="Read 'A Classy PowerShell Christmas'">class</a> and <a href="http://bit.ly/2gYjXUc" target="_blank" title="Read 'A Classy Christmas PowerShell Module'">module</a> are also described on my [blog](https://jdhitsolutions.com/blog)  
 
 
-*Last Updated 9 December 2017*
+*Last Updated 11 December 2017*
