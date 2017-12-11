@@ -75,6 +75,8 @@ One benefit of having external functions is that they are easier to test with so
 ## Data
 Some of the functions rely on text lists and randomization. Those lists have been moved to a json file. The json file is imported in the module and turned into an object.
 
+The json file is encoded with Unicode to support different language characters. Be careful opening the file where the encoding my change.
+
 ```
 $xmasData = Get-Content .\data.json | ConvertFrom-Json
 ```
