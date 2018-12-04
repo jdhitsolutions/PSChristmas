@@ -14,19 +14,23 @@ $first = "Toby","Bernard","Princess","Harvey","Chuck","Doris","Elsa",
 "Benedict","Sunshine","Kiki","Nutmeg","Humperdink","Jack",
 "Bertha","Matilda","Clarice","Dwight","Hermey","Rupert","Lady",
 "Izzy","Timmy","Tammy","Enoch","Suzie","Esmerelda","Doc","Matilda",
-"Kevin","Bob","Sleepy","Dopey","Snazzy","Izzy","Wizzy","Tizzy"
+"Kevin","Bob","Sleepy","Dopey","Snazzy","Izzy","Wizzy","Tizzy",
+"Todd","Zippy","Moonlight","Luna","Hermione","Pepper","Pip","Kip",
+"Diogones","Archimedes","Fred","Sneezy"
 
 $mod = "Ginger","Glitter","Frosty","Sugar","Sour","Pepper",
 "Minty","Crazy","Spicy","Pickle","Twinkle","Sparkle","Disco","Red",
 "Green","Little","Big","Tiny","Glow","Shimmer","Dazzle","Winter","Jingle",
 "Puffy","Fluffy","Saucy","Crinkle","Sticky","Purple","Dizzy","Crumple",
-"Jumble","Stinky","Stuffy","Smelly","Drizzle","Fizzle"
+"Jumble","Stinky","Stuffy","Smelly","Drizzle","Fizzle","Spotted","Zany",
+"Zippy","Pumpkin","Doozy","Woozy","Scuzzy","Furry"
     
 $last = "pants","toes","bottom","beard","nose","puss","lips",
 "ears","socks","stockings","belly","cheeks","bells","chin",
 "mctush","sticks","fish","whisker","boots","slippers","knicker",
 "knocker","muffin","puff","heels","knees","toe","knickerknocker",
-"fluff","fingers","eyes","buckle","butt"
+"fluff","fingers","eyes","buckle","butt","lobes","knuckles",
+"wind","gas"
 
 $presents = "Socks","Barbie","Elmo","XBox","GI Joe","Underwear",
 "Hot Wheels","EZ Bake Oven","Walkman","PS4","Pajamas","Stratego",
@@ -34,7 +38,8 @@ $presents = "Socks","Barbie","Elmo","XBox","GI Joe","Underwear",
 "Cabbage Patch Doll","Slippers","Sled","Bourbon","Coloring book",
 "Risk","Clue","Mystery Date","Rock'em Sock'em Robots","rocks",
 "Tesla","puppy","kitten","VCR","Parcheesi","Transformers","Bedazzler",
-"painting set","iPad","xBox","Wii"
+"painting set","iPad","xBox","Wii","iPhone","Jarts","Creepy Crawlers",
+"Connect Four"
 
 [pscustomobject]@{
  Greeting = $texts

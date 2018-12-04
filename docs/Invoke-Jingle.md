@@ -8,21 +8,24 @@ schema: 2.0.0
 # Invoke-Jingle
 
 ## SYNOPSIS
+
 Play a Christmas tune
 
 ## SYNTAX
 
-```
+```yaml
 Invoke-Jingle [-Christmas] <myChristmas>
 ```
 
 ## DESCRIPTION
+
 The command name explains it all. You should pipe a myChristmas object to this function.
 
 ## EXAMPLES
 
 ### Example 1
-```
+
+```powershell
 PS C:\> $xmas | Invoke-Jingle
 ```
 
@@ -31,12 +34,13 @@ There is no console output.
 ## PARAMETERS
 
 ### -Christmas
+
 An object created with New-MyChristmas
 
 ```yaml
 Type: myChristmas
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: 0
@@ -49,14 +53,14 @@ Accept wildcard characters: False
 
 ### myChristmas
 
-
 ## OUTPUTS
 
-### none
-
+### None
 
 ## NOTES
+
 Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell-resources/
 
 ## RELATED LINKS
+
 [New-MyChristmas]()

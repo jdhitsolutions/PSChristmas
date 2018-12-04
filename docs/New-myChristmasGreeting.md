@@ -8,21 +8,24 @@ schema: 2.0.0
 # New-myChristmasGreeting
 
 ## SYNOPSIS
+
 Create a Christmas greeting.
 
 ## SYNTAX
 
-```
+```yaml
 New-myChristmasGreeting
 ```
 
 ## DESCRIPTION
+
 This command will return a random Christmas greeting, most likely "Merry Christmas" from another language.
 
 ## EXAMPLES
 
 ### Example 1
-```
+
+```powershell
 PS C:\> New-MyChristmasGreeting
 Meri Kuri
 ```
@@ -33,13 +36,14 @@ Meri Kuri
 
 ### None
 
-
 ## OUTPUTS
 
 ### System.String
 
 ## NOTES
+
 Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell-resources/
 
 ## RELATED LINKS
+
 [New-MyChristmas]()

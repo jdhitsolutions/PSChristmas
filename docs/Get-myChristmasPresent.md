@@ -8,27 +8,31 @@ schema: 2.0.0
 # Get-myChristmasPresent
 
 ## SYNOPSIS
+
 Get a Christmas present
 
 ## SYNTAX
 
-```
+```yaml
 Get-myChristmasPresent [[-Count] <Int32>]
 ```
 
 ## DESCRIPTION
+
 Run this command to get one or more presents from Santa.
 
 ## EXAMPLES
 
 ### Example 1
-```
+
+```powershell
 PS C:\> Get-myChristmasPresent
 Barbie
 ```
 
 ### Example 2
-```
+
+```powershell
 PS C:\> Get-myChristmasPresent 4
 Slippers
 EZ Bake Oven
@@ -39,12 +43,13 @@ Walkman
 ## PARAMETERS
 
 ### -Count
+
 The number of presents to get.
 
 ```yaml
 Type: Int32
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: False
 Position: 0
@@ -57,13 +62,12 @@ Accept wildcard characters: False
 
 ### None
 
-
 ## OUTPUTS
 
 ### System.String
 
 ## NOTES
+
 Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell-resources/
 
 ## RELATED LINKS
-
