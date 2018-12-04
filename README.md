@@ -97,6 +97,7 @@ One benefit of using the json file as opposed to an enumeration is that the latt
 
 If you look at the module folder you'll also see a script called `BuildJsonFile.ps1` which will create the json file for you based on settings within the file.
 
+The variable, `xmasData` is exported to your PowerShell session so you can work with it.
 
 ### Credits
 

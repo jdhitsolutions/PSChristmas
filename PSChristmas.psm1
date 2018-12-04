@@ -84,3 +84,5 @@ Function New-MyChristmas {
 
 #dot source helper functions
 .  $PSScriptRoot\PSChristmasFunctions.ps1
+
+Export-ModuleMember -Variable xmasData
