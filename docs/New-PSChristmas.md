@@ -1,11 +1,11 @@
 ---
 external help file: PSChristmas-help.xml
 Module Name: PSChristmas
-online version: 
+online version:
 schema: 2.0.0
 ---
 
-# New-MyChristmas
+# New-PSChristmas
 
 ## SYNOPSIS
 
@@ -14,19 +14,19 @@ Create a custom Christmas object
 ## SYNTAX
 
 ```yaml
-New-MyChristmas
+New-PSChristmas
 ```
 
 ## DESCRIPTION
 
-This is a class-based function that creates a myChristmas object. You can save this object to a variable and pipe it to other commands in the PSChristmas module.
+This is a class-based function that creates a PSChristmas object. You can save this object to a variable and pipe it to other commands in the PSChristmas module.
 
 ## EXAMPLES
 
 ### Example 1
 
 ```powershell
-PS C:\> New-MyChristmas
+PS C:\> New-PSChristmas
 
 Greeting      : Frohe Weihnachten
 ElfName       : Doc Littlebeard
@@ -44,7 +44,7 @@ CountDown     : 15.14:04:57
 
 ## OUTPUTS
 
-### myChristmas
+### PSChristmas
 
 ## NOTES
 
@@ -54,4 +54,4 @@ Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell
 
 [Invoke-Jingle]()
 
-[Show-myChristmasMessage]()
+[Show-PSChristmasMessage]()

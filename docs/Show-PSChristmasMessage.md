@@ -1,11 +1,11 @@
 ---
 external help file: PSChristmas-help.xml
 Module Name: PSChristmas
-online version: 
+online version:
 schema: 2.0.0
 ---
 
-# Show-myChristmasMessage
+# Show-PSChristmasMessage
 
 ## SYNOPSIS
 
@@ -14,7 +14,7 @@ Display a hidden message in a Christmas object
 ## SYNTAX
 
 ```yaml
-Show-myChristmasMessage [-Christmas] <myChristmas>
+Show-PSChristmasMessage [-Christmas] <PSChristmas>
 ```
 
 ## DESCRIPTION
@@ -26,19 +26,19 @@ Display a holiday themed message to the console. This function does not write an
 ### Example 1
 
 ```powershell
-PS C:\> $xmas | Show-myChristmasMessage
+PS C:\> New-PSChristmas | Show-PSChristmasMessage
 ```
 
-Pipe a myChristmas object to this command to write a special message to the console. It is assumed $xmas was created with New-MyChristmas.
+Pipe a PSChristmas object to this command to write a special message to the console.
 
 ## PARAMETERS
 
 ### -Christmas
 
-An object created with New-MyChristmas
+An object created with New-PSChristmas
 
 ```yaml
-Type: myChristmas
+Type: PSChristmas
 Parameter Sets: (All)
 Aliases:
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ## INPUTS
 
-### myChristmas
+### PSChristmas
 
 ## OUTPUTS
 
@@ -63,5 +63,5 @@ Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell
 
 ## RELATED LINKS
 
-[New-MyChristmas]()
+[New-PSChristmas]()
 

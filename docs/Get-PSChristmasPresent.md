@@ -1,11 +1,11 @@
 ---
 external help file: PSChristmas-help.xml
 Module Name: PSChristmas
-online version: 
+online version:
 schema: 2.0.0
 ---
 
-# Get-myChristmasPresent
+# Get-PSChristmasPresent
 
 ## SYNOPSIS
 
@@ -14,7 +14,7 @@ Get a Christmas present
 ## SYNTAX
 
 ```yaml
-Get-myChristmasPresent [[-Count] <Int32>]
+Get-PSChristmasPresent [[-Count] <Int32>]
 ```
 
 ## DESCRIPTION
@@ -26,14 +26,14 @@ Run this command to get one or more presents from Santa.
 ### Example 1
 
 ```powershell
-PS C:\> Get-myChristmasPresent
+PS C:\> Get-PSChristmasPresent
 Barbie
 ```
 
 ### Example 2
 
 ```powershell
-PS C:\> Get-myChristmasPresent 4
+PS C:\> Get-PSChristmasPresent 4
 Slippers
 EZ Bake Oven
 Bicycle

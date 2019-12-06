@@ -2,9 +2,9 @@
 <helpItems schema="maml" xmlns="http://msh">
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>Get-myChristmasPresent</command:name>
+      <command:name>Get-PSChristmasPresent</command:name>
       <command:verb>Get</command:verb>
-      <command:noun>myChristmasPresent</command:noun>
+      <command:noun>PSChristmasPresent</command:noun>
       <maml:description>
         <maml:para>Get a Christmas present</maml:para>
       </maml:description>
@@ -14,7 +14,7 @@
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>Get-myChristmasPresent</maml:name>
+        <maml:name>Get-PSChristmasPresent</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>Count</maml:name>
           <maml:Description>
@@ -71,7 +71,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-myChristmasPresent
+        <dev:code>PS C:\&gt; Get-PSChristmasPresent
 Barbie</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
@@ -79,7 +79,7 @@ Barbie</dev:code>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-myChristmasPresent 4
+        <dev:code>PS C:\&gt; Get-PSChristmasPresent 4
 Slippers
 EZ Bake Oven
 Bicycle
@@ -101,7 +101,7 @@ Walkman</dev:code>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>The command name explains it all. You should pipe a myChristmas object to this function.</maml:para>
+      <maml:para>The command name explains it all. You can pipe a myChristmas object to this function, otherwise it will create one on the fly.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -109,7 +109,7 @@ Walkman</dev:code>
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
           <maml:name>Christmas</maml:name>
           <maml:Description>
-            <maml:para>An object created with New-MyChristmas</maml:para>
+            <maml:para>An object created with New-PSChristmas</maml:para>
           </maml:Description>
           <command:parameterValue required="true" variableLength="false">myChristmas</command:parameterValue>
           <dev:type>
@@ -124,7 +124,7 @@ Walkman</dev:code>
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
         <maml:name>Christmas</maml:name>
         <maml:Description>
-          <maml:para>An object created with New-MyChristmas</maml:para>
+          <maml:para>An object created with New-PSChristmas</maml:para>
         </maml:Description>
         <command:parameterValue required="true" variableLength="false">myChristmas</command:parameterValue>
         <dev:type>
@@ -162,15 +162,16 @@ Walkman</dev:code>
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; $xmas | Invoke-Jingle</dev:code>
+        <dev:code>PS C:\&gt;Invoke-Jingle
+Nollaig Chridheil, Diogones Furrylobes</dev:code>
         <dev:remarks>
-          <maml:para>There is no console output.</maml:para>
+          <maml:para>There is no pipeline output. A message is written to the console using Write-Host.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>New-MyChristmas</maml:linkText>
+        <maml:linkText>New-PSChristmas</maml:linkText>
         <maml:uri></maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
@@ -185,7 +186,7 @@ Walkman</dev:code>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>This command will provide you an elf name.</maml:para>
+      <maml:para>This command will provide you a random elf name.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -230,26 +231,26 @@ Elsa Mintypuff</dev:code>
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>New-MyChristmas</maml:linkText>
+        <maml:linkText>New-PSChristmas</maml:linkText>
         <maml:uri></maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>New-MyChristmas</command:name>
+      <command:name>New-PSChristmas</command:name>
       <command:verb>New</command:verb>
-      <command:noun>MyChristmas</command:noun>
+      <command:noun>PSChristmas</command:noun>
       <maml:description>
         <maml:para>Create a custom Christmas object</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>This is a class-based function that creates a myChristmas object. You can save this object to a variable and pipe it to other commands in the PSChristmas module.</maml:para>
+      <maml:para>This is a class-based function that creates a PSChristmas object. You can save this object to a variable and pipe it to other commands in the PSChristmas module.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>New-MyChristmas</maml:name>
+        <maml:name>New-PSChristmas</maml:name>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters />
@@ -266,7 +267,7 @@ Elsa Mintypuff</dev:code>
     <command:returnValues>
       <command:returnValue>
         <dev:type>
-          <maml:name>myChristmas</maml:name>
+          <maml:name>PSChristmas</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -281,7 +282,7 @@ Elsa Mintypuff</dev:code>
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-MyChristmas
+        <dev:code>PS C:\&gt; New-PSChristmas
 
 Greeting      : Frohe Weihnachten
 ElfName       : Doc Littlebeard
@@ -300,16 +301,16 @@ CountDown     : 15.14:04:57</dev:code>
         <maml:uri></maml:uri>
       </maml:navigationLink>
       <maml:navigationLink>
-        <maml:linkText>Show-myChristmasMessage</maml:linkText>
+        <maml:linkText>Show-PSChristmasMessage</maml:linkText>
         <maml:uri></maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>New-myChristmasGreeting</command:name>
+      <command:name>New-PSChristmasGreeting</command:name>
       <command:verb>New</command:verb>
-      <command:noun>myChristmasGreeting</command:noun>
+      <command:noun>PSChristmasGreeting</command:noun>
       <maml:description>
         <maml:para>Create a Christmas greeting.</maml:para>
       </maml:description>
@@ -319,7 +320,7 @@ CountDown     : 15.14:04:57</dev:code>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>New-myChristmasGreeting</maml:name>
+        <maml:name>New-PSChristmasGreeting</maml:name>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters />
@@ -351,7 +352,7 @@ CountDown     : 15.14:04:57</dev:code>
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-MyChristmasGreeting
+        <dev:code>PS C:\&gt; New-PSChristmasGreeting
 Meri Kuri</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
@@ -360,16 +361,16 @@ Meri Kuri</dev:code>
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>New-MyChristmas</maml:linkText>
+        <maml:linkText>New-PSChristmas</maml:linkText>
         <maml:uri></maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>Show-myChristmasMessage</command:name>
+      <command:name>Show-PSChristmasMessage</command:name>
       <command:verb>Show</command:verb>
-      <command:noun>myChristmasMessage</command:noun>
+      <command:noun>PSChristmasMessage</command:noun>
       <maml:description>
         <maml:para>Display a hidden message in a Christmas object</maml:para>
       </maml:description>
@@ -379,15 +380,15 @@ Meri Kuri</dev:code>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>Show-myChristmasMessage</maml:name>
+        <maml:name>Show-PSChristmasMessage</maml:name>
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
           <maml:name>Christmas</maml:name>
           <maml:Description>
-            <maml:para>An object created with New-MyChristmas</maml:para>
+            <maml:para>An object created with New-PSChristmas</maml:para>
           </maml:Description>
-          <command:parameterValue required="true" variableLength="false">myChristmas</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">PSChristmas</command:parameterValue>
           <dev:type>
-            <maml:name>myChristmas</maml:name>
+            <maml:name>PSChristmas</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -398,11 +399,11 @@ Meri Kuri</dev:code>
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
         <maml:name>Christmas</maml:name>
         <maml:Description>
-          <maml:para>An object created with New-MyChristmas</maml:para>
+          <maml:para>An object created with New-PSChristmas</maml:para>
         </maml:Description>
-        <command:parameterValue required="true" variableLength="false">myChristmas</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">PSChristmas</command:parameterValue>
         <dev:type>
-          <maml:name>myChristmas</maml:name>
+          <maml:name>PSChristmas</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -411,7 +412,7 @@ Meri Kuri</dev:code>
     <command:inputTypes>
       <command:inputType>
         <dev:type>
-          <maml:name>myChristmas</maml:name>
+          <maml:name>PSChristmas</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -436,15 +437,108 @@ Meri Kuri</dev:code>
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; $xmas | Show-myChristmasMessage</dev:code>
+        <dev:code>PS C:\&gt; New-PSChristmas | Show-PSChristmasMessage</dev:code>
         <dev:remarks>
-          <maml:para>Pipe a myChristmas object to this command to write a special message to the console. It is assumed $xmas was created with New-MyChristmas.</maml:para>
+          <maml:para>Pipe a PSChristmas object to this command to write a special message to the console.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
     <command:relatedLinks>
       <maml:navigationLink>
-        <maml:linkText>New-MyChristmas</maml:linkText>
+        <maml:linkText>New-PSChristmas</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Write-Festive</command:name>
+      <command:verb>Write</command:verb>
+      <command:noun>Festive</command:noun>
+      <maml:description>
+        <maml:para>Write a festive message to the console</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>This is a silly command that writes a colorized message to the host. The output is written the host using Write-Host with randomly colored foreground and background colors for each letter and space.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Write-Festive</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
+          <maml:name>Text</maml:name>
+          <maml:Description>
+            <maml:para>Enter a text message</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
+        <maml:name>Text</maml:name>
+        <maml:Description>
+          <maml:para>Enter a text message</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt;  Write-Festive "Merry Christmas"
+Merry Christmas</dev:code>
+        <dev:remarks>
+          <maml:para>The output is written the host using Write-Host with randomly colored foreground and background colors for each letter and space.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; New-PSChristmasGreeting | Write-Festive
+Priecīgus Ziemassvētkus</dev:code>
+        <dev:remarks>
+          <maml:para>The actual output will be colored.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Write-Host</maml:linkText>
         <maml:uri></maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>

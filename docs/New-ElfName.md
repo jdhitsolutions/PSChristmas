@@ -1,7 +1,7 @@
 ---
 external help file: PSChristmas-help.xml
 Module Name: PSChristmas
-online version: 
+online version:
 schema: 2.0.0
 ---
 
@@ -19,7 +19,7 @@ New-ElfName
 
 ## DESCRIPTION
 
-This command will provide you an elf name.
+This command will provide you a random elf name.
 
 ## EXAMPLES
 
@@ -46,4 +46,4 @@ Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell
 
 ## RELATED LINKS
 
-[New-MyChristmas]()
+[New-PSChristmas]()

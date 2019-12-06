@@ -1,11 +1,11 @@
 ---
 external help file: PSChristmas-help.xml
 Module Name: PSChristmas
-online version: 
+online version:
 schema: 2.0.0
 ---
 
-# New-myChristmasGreeting
+# New-PSChristmasGreeting
 
 ## SYNOPSIS
 
@@ -14,7 +14,7 @@ Create a Christmas greeting.
 ## SYNTAX
 
 ```yaml
-New-myChristmasGreeting
+New-PSChristmasGreeting
 ```
 
 ## DESCRIPTION
@@ -26,7 +26,7 @@ This command will return a random Christmas greeting, most likely "Merry Christm
 ### Example 1
 
 ```powershell
-PS C:\> New-MyChristmasGreeting
+PS C:\> New-PSChristmasGreeting
 Meri Kuri
 ```
 
@@ -46,4 +46,4 @@ Learn more about PowerShell: http://jdhitsolutions.com/blog/essential-powershell
 
 ## RELATED LINKS
 
-[New-MyChristmas]()
+[New-PSChristmas]()
