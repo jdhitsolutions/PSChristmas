@@ -110,6 +110,8 @@ Previous versions of this module used a noun and class name of *myChristmas*. I 
 
 The functions to display the holiday graphics and play the tune are things I've collected since the earliest days of PowerShell. I wish I could remember who created all of them. I seem to recall "repurposing" at least from Lee Holmes, Hal Rottenberg and MoW.
 
-The <a href="http://bit.ly/2gTxigI" target="_blank" title="Read 'A Classy PowerShell Christmas'">class</a> and <a href="http://bit.ly/2gYjXUc" target="_blank" title="Read 'A Classy Christmas PowerShell Module'">module</a> are also described on my [blog](https://jdhitsolutions.com/blog)
+![Show-PSChristmas](./assets/show-pschristmas.jpg)
 
-*Last Updated 6 December 2019*
+The [class](http://bit.ly/2gTxigI) and [module]("http://bit.ly/2gYjXUc) are also described on my [blog](https://jdhitsolutions.com/blog)
+
+*Last Updated 24 December 2019*
