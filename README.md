@@ -10,7 +10,9 @@ You can install a release from GitHub or the PowerShell Gallery.
 Install-Module PSChristmas
 ```
 
-## Using the Class
+Almost all of the functions will also work in PowerShell 7 cross-platform.
+
+## Using the Class :christmas_tree:
 
 In order for the user of the module to not have to understand how to work with objects and classes, the module contains a function to create a new instance of the class called `New-PSChristmas`.
 
@@ -18,20 +20,28 @@ In order for the user of the module to not have to understand how to work with o
 $xmas = New-PSChristmas
 ```
 
-This object will look like this:
+The object has a custom format files.
 
-```text
-Greeting      : Hyvää Joulua
-ElfName       : Boris Spicybottom
+![PSChristmas](./assets/pschristmas.png)
+
+Or you can look at the full object.
+
+```powershell
+PS C:\> $xmas | Select-Object *
+
+Greeting      : Vesel Božič
+ElfName       : Snookums Pinkpuff
 List          : Nice
-ChristmasDay  : Monday
-DaysRemaining : 16
-CountDown     : 15.14:53:49
+ChristmasDay  : Wednesday
+DaysRemaining : 22
+CountDown     : 22.06:06:09
 ```
 
 If you examine the object with `Get-Member` you will see a few methods.
 
-```text
+```powershell
+PS C:\> $xmas | Get-Member
+
    TypeName: PSChristmas
 
 Name          MemberType Definition
@@ -58,24 +68,22 @@ $xmas | Invoke-Jingle
 $xmas | Show-PSChristmasMessage
 ```
 
-## Helper Functions
+## Helper Functions :elf:
 
 The module includes several other functions, some of which are exported for the user to manually run.
 
 ```powershell
-PS C:\> get-command -Module PSChristmas
+PS C:\> Get-Command -Module PSChristmas
 
-
-CommandType Name                     Version Source
------------ ----                     ------- ------
-Function    Get-PSChristmasPresent   2.0.0   PSChristmas
-Function    Invoke-Jingle            2.0.0   PSChristmas
-Function    New-ElfName              2.0.0   PSChristmas
-Function    New-PSChristmas          2.0.0   PSChristmas
-Function    New-PSChristmasGreeting  2.0.0   PSChristmas
-Function    Show-PSChristmasMessage  2.0.0   PSChristmas
-Function    Write-Festive            2.0.0   PSChristmas
-
+CommandType Name                    Version Source
+----------- ----                    ------- ------
+Function    Get-PSChristmasPresent  2.2.0   PSChristmas
+Function    Invoke-Jingle           2.2.0   PSChristmas
+Function    New-ElfName             2.2.0   PSChristmas
+Function    New-PSChristmas         2.2.0   PSChristmas
+Function    New-PSChristmasGreeting 2.2.0   PSChristmas
+Function    Show-PSChristmasMessage 2.2.0   PSChristmas
+Function    Write-Festive           2.2.0   PSChristmas
 ```
 
 One benefit of having external functions is that they are easier to test with something like Pester or update without having to modify the class definition.
@@ -113,5 +121,3 @@ The functions to display the holiday graphics and play the tune are things I've 
 ![Show-PSChristmas](./assets/show-pschristmas.jpg)
 
 The [class](http://bit.ly/2gTxigI) and [module]("http://bit.ly/2gYjXUc) are also described on my [blog](https://jdhitsolutions.com/blog)
-
-*Last Updated 24 December 2019*

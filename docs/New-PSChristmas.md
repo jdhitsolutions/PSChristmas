@@ -28,13 +28,14 @@ This is a class-based function that creates a PSChristmas object. You can save t
 ```powershell
 PS C:\> New-PSChristmas
 
-Greeting      : Frohe Weihnachten
-ElfName       : Doc Littlebeard
-List          : Nice
-ChristmasDay  : Tuesday
-DaysRemaining : 16
-CountDown     : 15.14:04:57
+   Holiday Message: Vesel Božič
+
+ElfName           List ChristmasDay Days   CountDown
+-------           ---- ------------ ----   ---------
+Snookums Pinkpuff Nice  Wednesday     22 22.06:06:09
 ```
+
+The module uses a custom formatting file for the default output which uses ANSI escape sequences to stylize the output.
 
 ## PARAMETERS
 

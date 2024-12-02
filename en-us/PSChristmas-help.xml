@@ -17,9 +17,9 @@
         <maml:name>Get-PSChristmasPresent</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>Count</maml:name>
-          <maml:Description>
+          <maml:description>
             <maml:para>The number of presents to get.</maml:para>
-          </maml:Description>
+          </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
             <maml:name>Int32</maml:name>
@@ -32,9 +32,9 @@
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>Count</maml:name>
-        <maml:Description>
+        <maml:description>
           <maml:para>The number of presents to get.</maml:para>
-        </maml:Description>
+        </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
           <maml:name>Int32</maml:name>
@@ -108,9 +108,9 @@ Walkman</dev:code>
         <maml:name>Invoke-Jingle</maml:name>
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
           <maml:name>Christmas</maml:name>
-          <maml:Description>
+          <maml:description>
             <maml:para>An object created with New-PSChristmas</maml:para>
-          </maml:Description>
+          </maml:description>
           <command:parameterValue required="true" variableLength="false">myChristmas</command:parameterValue>
           <dev:type>
             <maml:name>myChristmas</maml:name>
@@ -123,9 +123,9 @@ Walkman</dev:code>
     <command:parameters>
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
         <maml:name>Christmas</maml:name>
-        <maml:Description>
+        <maml:description>
           <maml:para>An object created with New-PSChristmas</maml:para>
-        </maml:Description>
+        </maml:description>
         <command:parameterValue required="true" variableLength="false">myChristmas</command:parameterValue>
         <dev:type>
           <maml:name>myChristmas</maml:name>
@@ -193,9 +193,9 @@ Nollaig Chridheil, Diogones Furrylobes</dev:code>
         <maml:name>New-ElfName</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Count</maml:name>
-          <maml:Description>
+          <maml:description>
             <maml:para>Specify the number of names to generate up to 50.</maml:para>
-          </maml:Description>
+          </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
             <maml:name>Int32</maml:name>
@@ -208,9 +208,9 @@ Nollaig Chridheil, Diogones Furrylobes</dev:code>
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Count</maml:name>
-        <maml:Description>
+        <maml:description>
           <maml:para>Specify the number of names to generate up to 50.</maml:para>
-        </maml:Description>
+        </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
           <maml:name>Int32</maml:name>
@@ -247,7 +247,7 @@ Nollaig Chridheil, Diogones Furrylobes</dev:code>
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-Elfname
+        <dev:code>PS C:\&gt; New-ElfName
 Elsa Mintypuff</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
@@ -255,7 +255,7 @@ Elsa Mintypuff</dev:code>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-Elfname -count 5
+        <dev:code>PS C:\&gt; New-ElfName -count 5
 Tammy Bignose
 Wizzy Glitterbells
 Humperdink Littlegas
@@ -321,14 +321,13 @@ Nutmeg Zanytoe</dev:code>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; New-PSChristmas
 
-Greeting      : Frohe Weihnachten
-ElfName       : Doc Littlebeard
-List          : Nice
-ChristmasDay  : Tuesday
-DaysRemaining : 16
-CountDown     : 15.14:04:57</dev:code>
+   Holiday Message: Vesel Božič
+
+ElfName           List ChristmasDay Days   CountDown
+-------           ---- ------------ ----   ---------
+Snookums Pinkpuff Nice  Wednesday     22 22.06:06:09</dev:code>
         <dev:remarks>
-          <maml:para></maml:para>
+          <maml:para>The module uses a custom formatting file for the default output which uses ANSI escape sequences to stylize the output.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -420,9 +419,9 @@ Meri Kuri</dev:code>
         <maml:name>Show-PSChristmasMessage</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
           <maml:name>Christmas</maml:name>
-          <maml:Description>
+          <maml:description>
             <maml:para>An object created with New-PSChristmas</maml:para>
-          </maml:Description>
+          </maml:description>
           <command:parameterValue required="true" variableLength="false">PSChristmas</command:parameterValue>
           <dev:type>
             <maml:name>PSChristmas</maml:name>
@@ -435,9 +434,9 @@ Meri Kuri</dev:code>
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
         <maml:name>Christmas</maml:name>
-        <maml:Description>
+        <maml:description>
           <maml:para>An object created with New-PSChristmas</maml:para>
-        </maml:Description>
+        </maml:description>
         <command:parameterValue required="true" variableLength="false">PSChristmas</command:parameterValue>
         <dev:type>
           <maml:name>PSChristmas</maml:name>
@@ -520,9 +519,9 @@ Meri Kuri</dev:code>
         <maml:name>Write-Festive</maml:name>
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
           <maml:name>Text</maml:name>
-          <maml:Description>
+          <maml:description>
             <maml:para>Enter a text message</maml:para>
-          </maml:Description>
+          </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
             <maml:name>String</maml:name>
@@ -535,9 +534,9 @@ Meri Kuri</dev:code>
     <command:parameters>
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
         <maml:name>Text</maml:name>
-        <maml:Description>
+        <maml:description>
           <maml:para>Enter a text message</maml:para>
-        </maml:Description>
+        </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
           <maml:name>String</maml:name>

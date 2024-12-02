@@ -26,14 +26,14 @@ This command will provide you a random elf name.
 ### Example 1
 
 ```powershell
-PS C:\> New-Elfname
+PS C:\> New-ElfName
 Elsa Mintypuff
 ```
 
 ### Example 2
 
 ```powershell
-PS C:\> New-Elfname -count 5
+PS C:\> New-ElfName -count 5
 Tammy Bignose
 Wizzy Glitterbells
 Humperdink Littlegas
